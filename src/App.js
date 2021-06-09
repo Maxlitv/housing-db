@@ -6,11 +6,11 @@ import Savings from "./components/Savings/Savings";
 import Income from "./components/Shared/Income/Income";
 import SubmitBtn from "./components/Shared/SubmitBtn/SubmitBtn";
 
-function App() {
+function App({data}) {
   return (
     <div className="App">
       <div className="flex-item">
-        <Personer />
+        <Personer data={data} />
       </div>
       <div className="flex-item">
         <Biler />

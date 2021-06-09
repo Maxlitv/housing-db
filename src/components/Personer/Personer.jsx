@@ -2,12 +2,12 @@ import React from "react";
 import css from "./Personer.module.css";
 import ButtonSet from "../Shared/Buttonset/ButtonSet";
 
-function Personer() {
+function Personer({ data }) {
   return (
     <div>
       <div className={css.input_block}>
         <div className={css.container_row}>
-          <p>2</p>
+          <p>{data.personerData.total}</p>
         </div>
       </div>
 
@@ -17,7 +17,7 @@ function Personer() {
           <div className={css.name}>Voksne</div>
           <div className={css.button_set}>
             <button className={css.counter}>-</button>
-            <div className={css.renderAmount}>null</div>
+            <div className={css.renderAmount}>{data.personerData.total}</div>
             <button className={css.counter}>+</button>
           </div>
         </div>
@@ -31,4 +31,3 @@ function Personer() {
 }
 
 export default Personer;
-
