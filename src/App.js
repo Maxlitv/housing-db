@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Personer from "./components/Personer/Personer";
+import Biler from "./components/Shared/Biler/Biler";
+import Savings from "./components/Savings/Savings";
+import Income from "./components/Shared/Income/Income";
+import SubmitBtn from "./components/Shared/SubmitBtn/SubmitBtn";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="flex-item">
+        <Personer />
+      </div>
+      <div className="flex-item">
+        <Biler />
+      </div>
+      <div className="flex-item">
+        <Savings />
+      </div>
+      <div className="flex-item">
+        <Income />
+      </div>
+      <div className="flex-item">
+        <SubmitBtn />
+      </div>
     </div>
   );
 }
