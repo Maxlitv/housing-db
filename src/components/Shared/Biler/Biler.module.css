@@ -10,6 +10,13 @@
 .input_block:hover{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+.arrow{
+  width: 15px;
+  transition: all 0.3s;
+}
+.arrow_up{
+transform: rotate(180deg);
+}
 
 .label {
   margin: 25px 25px 0px 35px;
@@ -36,7 +43,7 @@ display: none;
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   margin: 10px 20px;
   /* padding: 8px 0px; */
 }

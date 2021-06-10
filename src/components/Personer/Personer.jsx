@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import css from "./Personer.module.css";
 import ButtonSet from "../Shared/Buttonset/ButtonSet";
 import store from "../../data";
+import arrow from '../../assets/arrow-down.svg'
 
 function Personer({ data }) {
   const [isOpened, toggleBox ] = useState(false);
@@ -14,6 +15,7 @@ let handleDrop = () =>{
       <div onClick={handleDrop} className={css.input_block}>
         <div className={css.container_row}>
           <p>{data.personerData.total}</p>
+          <img className={`${css.arrow} ${isOpened ? "" : css.arrow_up}`} src={arrow} alt="" />
         </div>
       </div>
 {/* <div className={`${css.container_row} ${css.row_padding} ${isOpened?'':css.drop_open_hide}`}></div> */}
