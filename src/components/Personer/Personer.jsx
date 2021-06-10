@@ -5,6 +5,7 @@ import ButtonSet from "../Shared/Buttonset/ButtonSet";
 function Personer({ data }) {
   return (
     <div>
+      <p className={css.label}>Samlet indkomst efter skat pr. md.</p>
       <div className={css.input_block}>
         <div className={css.container_row}>
           <p>{data.personerData.total}</p>

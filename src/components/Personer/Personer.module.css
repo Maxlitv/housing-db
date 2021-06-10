@@ -6,6 +6,12 @@
   border-radius: 25px;
   margin: 25px;
 }
+.label {
+  margin: 25px 25px 0px 25px;
+  color: rgb(0, 55, 85);
+  font-weight: 300;
+  font-size: 14px;
+}
 
 .drop_open {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -22,7 +28,7 @@
   margin: 10px 20px;
   /* padding: 8px 0px; */
 }
-.row_padding{
+.row_padding {
   padding-top: 20px;
 }
 .name {
@@ -52,7 +58,7 @@
   width: 30px;
   margin: 0px 10px 0px 10px;
 }
-.renderAmount span{
+.renderAmount span {
   font-size: 20px;
 }
 .counter {
@@ -61,7 +67,7 @@
   width: 25px;
   height: 25px;
   background-color: white;
-  color: rgb(0, 55, 85);;
+  color: rgb(0, 55, 85);
   cursor: pointer;
   transition: all 0.2s;
 }
