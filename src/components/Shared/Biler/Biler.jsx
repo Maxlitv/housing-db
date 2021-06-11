@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import css from "./Biler.module.css";
 import arrow from "../../../assets/arrow-down.svg";
 
-function Biler() {
+function Biler({numberOfCars}) {
   const [isOpened, toggleBox] = useState(false);
   let handleDrop = () => {
     toggleBox(!isOpened);
@@ -12,7 +12,7 @@ function Biler() {
       <p className={css.label}>Biler</p>
       <div onClick={handleDrop} className={css.input_block}>
         <div className={css.container_row}>
-          <p>0</p>
+          <p>{numberOfCars}</p>
           <img
             className={`${css.arrow} ${isOpened ? "" : css.arrow_up}`}
             src={arrow}
@@ -27,9 +27,9 @@ function Biler() {
           <div className={css.name}>Biler</div>
           <div className={css.button_set}>
             <button className={css.counter}>-</button>
-            <div className={css.renderAmount}>null</div>
+            <div className={css.renderAmount}>{numberOfCars}</div>
             <button className={css.counter}>+</button>
-          </div>
+          </div>  
         </div>
       </div>
     </div>

@@ -1,21 +1,26 @@
 let store = {
-    personerData:{
-       voksne: 0,
-       zeroTwo: 0,
-       threeFive: 0,
-       sixNine: 0,
-       tenSeventeen: 0,
-       eighteen:0,
-       total: 0,
-    },
-    rowList:{
-        firstRow: '0-2ar',
-        secondRow: '3-5ar',
-        thirdRow: '6-9',
-        fourRow: '10-17',
-        lastRow: '18+ ar'
-    }
+  personerData: {
+    numberOfAdults: 0,
+    numberOfCars: 0,
+    numberOfAllPeople: 0,
+    income : 0,
+    downPayment: 0,
+  },
+  ageSpecs: {
+    age0_2: "0-2 år",
+    age3_5: "3-5 år",
+    age6_9: "6-9 år",
+    age10_17: "10-17 år",
+    age18up: "18+ år",
+  },
+  numberOfChildren: {
+    age0_2: 0,
+    age3_5: 0,
+    age6_9: 0,
+    age10_17: 0,
+    age18up: 0,
+    total: 0,
+  },
+};
 
-}
-
-export default store
+export default store;

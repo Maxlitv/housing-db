@@ -6,7 +6,7 @@
   margin: 10px 20px;
   /* padding: 8px 0px; */
 }
-.container_row:nth-child(5) {
+.container_row:nth-child(6) {
 padding-bottom: 20px;
 }
 .container_row:nth-child(1) {
@@ -42,6 +42,7 @@ padding-top: 20px;
 }
 .renderAmount p {
   font-size: 18px;
+  text-align: center;
 }
 .counter {
   border: 1px solid rgb(0, 55, 85);
