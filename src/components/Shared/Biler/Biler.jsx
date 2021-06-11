@@ -13,7 +13,11 @@ function Biler() {
       <div onClick={handleDrop} className={css.input_block}>
         <div className={css.container_row}>
           <p>0</p>
-          <img className={`${css.arrow} ${isOpened ? "" : css.arrow_up}`} src={arrow} alt="" />
+          <img
+            className={`${css.arrow} ${isOpened ? "" : css.arrow_up}`}
+            src={arrow}
+            alt=""
+          />
         </div>
       </div>
 
