@@ -70,6 +70,9 @@
   user-select: none;
   align-items: center;
 }
+.button_set button:active{
+  transform: translateY(4px);
+}
 .renderAmount {
   width: 30px;
   margin: 0px 10px 0px 10px;

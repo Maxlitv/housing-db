@@ -2,7 +2,19 @@ import React, { useState } from "react";
 import css from "./Biler.module.css";
 import arrow from "../../../assets/arrow-down.svg";
 
-function Biler({numberOfCars}) {
+function Biler({numberOfCars, dispatch}) {
+  const discrement = () => {
+    if (numberOfCars <= 0) {
+      return;
+    }
+    dispatch({ type: "carMinus"});
+  };
+  const increment = () => {
+    if (numberOfCars >= 8) {
+      return;
+    }
+    dispatch({ type: "carPlus"});
+  };
   const [isOpened, toggleBox] = useState(false);
   let handleDrop = () => {
     toggleBox(!isOpened);
@@ -26,9 +38,9 @@ function Biler({numberOfCars}) {
         <div className={`${css.container_row} ${css.row_padding}`}>
           <div className={css.name}>Biler</div>
           <div className={css.button_set}>
-            <button className={css.counter}>-</button>
+            <button onClick={discrement} className={css.counter}>-</button>
             <div className={css.renderAmount}>{numberOfCars}</div>
-            <button className={css.counter}>+</button>
+            <button onClick={increment} className={css.counter}>+</button>
           </div>  
         </div>
       </div>

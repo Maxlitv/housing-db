@@ -46,6 +46,22 @@ const reducer = (state, action) => {
           numberOfAdults: state.personerData.numberOfAdults - 1,
         },
       };
+      case 'carPlus':
+        return{
+          ...state,
+          personerData:{
+            ...state.personerData,
+            numberOfCars: state.personerData.numberOfCars +1,
+          },
+        };
+      case 'carMinus':
+        return{
+          ...state,
+          personerData:{
+            ...state.personerData,
+            numberOfCars: state.personerData.numberOfCars -1,
+          },
+        };
       default: return state
   }
 };
@@ -58,7 +74,7 @@ function App() {
         <Personer data={state} dispatch={dispatch} />
       </div>
       <div className="flex-item">
-        <Biler numberOfCars={state.personerData.numberOfCars} />
+        <Biler dispatch={dispatch} numberOfCars={state.personerData.numberOfCars} />
       </div>
       <div className="flex-item">
         <Savings savings={state.personerData.income} />
