@@ -44,3 +44,12 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+.error_msg{
+  transition: 0.3s all;
+  width: 222px;
+  margin: 0px 25px 25px 25px;
+  padding: 10px 15px;
+  background-color: #fbb273;
+  color: #ffffff;
+  font-size: 13px;
+}

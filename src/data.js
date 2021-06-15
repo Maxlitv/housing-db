@@ -1,10 +1,10 @@
 let store = {
   personerData: {
-    numberOfAdults: 0,
+    numberOfAdults: 1,
     numberOfCars: 0,
     numberOfAllPeople: 0,
-    income: 0,
-    downPayment: 0,
+    income: '',
+    downPayment: '',
   },
   errorTips: {
     savings: false,

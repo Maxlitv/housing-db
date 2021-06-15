@@ -7,7 +7,6 @@ function Savings({ savings, dispatch, showErrorTip }) {
     console.log(typeof input1);
     if (input1 >= 100000000) {
       dispatch({ type: "showErrorTip", marker: "savings" });
-      
     } else {
       dispatch({ type: "hideErrorTip", marker: "savings" });
     }
@@ -25,7 +24,11 @@ function Savings({ savings, dispatch, showErrorTip }) {
         type="number"
         value={savings}
       />
-      {showErrorTip && <p>Beløbet skal være mindre end 100.000.000</p>}
+      {showErrorTip && (
+        <p className={css.error_msg}>
+          Beløbet skal være mindre end 100.000.000
+        </p>
+      )}
     </div>
   );
 }

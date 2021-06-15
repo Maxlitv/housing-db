@@ -86,6 +86,31 @@ const reducer = (state, action) => {
           [action.marker]: false,
         },
       };
+      //downPayment 
+    case "downPayment":
+      return {
+        ...state,
+        personerData: {
+          ...state.personerData,
+          downPayment: action.payload,
+        },
+      };
+    case "showErrorTipDown":
+      return {
+        ...state,
+        errorTips: {
+          ...state.errorTips.downPayment,
+          [action.marker]: true,
+        },
+      };
+    case "hideErrorTipDown":
+      return {
+        ...state,
+        errorTips: {
+          ...state.errorTips.downPayment,
+          [action.marker]: false,
+        },
+      };
 
     default:
       return state;
@@ -113,7 +138,7 @@ function App() {
         />
       </div>
       <div className="flex-item">
-        <Income downPayment={state.personerData.downPayment} />
+        <Income dispatch={dispatch} showErrorTip={state.errorTips.downPayment} downPayment={state.personerData.downPayment} />
       </div>
       <div className="flex-item">
         <SubmitBtn isHidden={state.errorTips.savings || state.errorTips.downPayment} />
