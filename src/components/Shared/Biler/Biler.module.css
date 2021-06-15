@@ -33,6 +33,7 @@
   display: block;
   transition: all 0.2s;
   position: absolute;
+  z-index: 5;
 }
 .drop_open_hide {
   display: none;
@@ -70,7 +71,7 @@
   user-select: none;
   align-items: center;
 }
-.button_set button:active{
+.button_set button:active {
   transform: translateY(4px);
 }
 .renderAmount {

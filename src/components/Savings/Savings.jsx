@@ -3,15 +3,14 @@ import css from "./Savings.module.css";
 
 function Savings({ savings, dispatch, showErrorTip }) {
   const inputHandler = (e) => {
-    let input1 = Number(e.target.value);
-    console.log(typeof input1);
-    if (input1 >= 100000000) {
+    let input = Number(e.target.value);
+    if (input >= 100000000) {
       dispatch({ type: "showErrorTip", marker: "savings" });
     } else {
       dispatch({ type: "hideErrorTip", marker: "savings" });
     }
 
-    dispatch({ type: "savings", payload: input1 });
+    dispatch({ type: "savings", payload: input });
   };
   return (
     <div className={css.container}>

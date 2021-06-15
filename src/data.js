@@ -3,8 +3,8 @@ let store = {
     numberOfAdults: 1,
     numberOfCars: 0,
     numberOfAllPeople: 0,
-    income: '',
-    downPayment: '',
+    income: "",
+    downPayment: "",
   },
   errorTips: {
     savings: false,

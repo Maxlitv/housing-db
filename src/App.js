@@ -86,7 +86,7 @@ const reducer = (state, action) => {
           [action.marker]: false,
         },
       };
-      //downPayment 
+    //downPayment
     case "downPayment":
       return {
         ...state,
@@ -99,7 +99,7 @@ const reducer = (state, action) => {
       return {
         ...state,
         errorTips: {
-          ...state.errorTips.downPayment,
+          ...state.errorTips,
           [action.marker]: true,
         },
       };
@@ -107,7 +107,7 @@ const reducer = (state, action) => {
       return {
         ...state,
         errorTips: {
-          ...state.errorTips.downPayment,
+          ...state.errorTips,
           [action.marker]: false,
         },
       };
@@ -138,10 +138,16 @@ function App() {
         />
       </div>
       <div className="flex-item">
-        <Income dispatch={dispatch} showErrorTip={state.errorTips.downPayment} downPayment={state.personerData.downPayment} />
+        <Income
+          dispatch={dispatch}
+          showErrorTip={state.errorTips.downPayment}
+          downPayment={state.personerData.downPayment}
+        />
       </div>
       <div className="flex-item">
-        <SubmitBtn isHidden={state.errorTips.savings || state.errorTips.downPayment} />
+        <SubmitBtn
+          isHidden={state.errorTips.downPayment || state.errorTips.savings}
+        />
       </div>
     </div>
   );
