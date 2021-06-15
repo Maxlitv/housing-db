@@ -1,10 +1,10 @@
 import React from "react";
 import css from "./SubmitBtn.module.css";
 
-function SubmitBtn() {
+function SubmitBtn({isHidden}) {
   return (
     <div>
-      <button className={css.button}>Se boliger</button>
+      <button disabled={isHidden} className={css.button}>Se boliger</button>
     </div>
   );
 }

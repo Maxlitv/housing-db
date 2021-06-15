@@ -46,23 +46,49 @@ const reducer = (state, action) => {
           numberOfAdults: state.personerData.numberOfAdults - 1,
         },
       };
-      case 'carPlus':
-        return{
-          ...state,
-          personerData:{
-            ...state.personerData,
-            numberOfCars: state.personerData.numberOfCars +1,
-          },
-        };
-      case 'carMinus':
-        return{
-          ...state,
-          personerData:{
-            ...state.personerData,
-            numberOfCars: state.personerData.numberOfCars -1,
-          },
-        };
-      default: return state
+    case "carPlus":
+      return {
+        ...state,
+        personerData: {
+          ...state.personerData,
+          numberOfCars: state.personerData.numberOfCars + 1,
+        },
+      };
+    case "carMinus":
+      return {
+        ...state,
+        personerData: {
+          ...state.personerData,
+          numberOfCars: state.personerData.numberOfCars - 1,
+        },
+      };
+    case "savings":
+      return {
+        ...state,
+        personerData: {
+          ...state.personerData,
+          income: action.payload,
+        },
+      };
+    case "showErrorTip":
+      return {
+        ...state,
+        errorTips: {
+          ...state.errorTips,
+          [action.marker]: true,
+        },
+      };
+    case "hideErrorTip":
+      return {
+        ...state,
+        errorTips: {
+          ...state.errorTips,
+          [action.marker]: false,
+        },
+      };
+
+    default:
+      return state;
   }
 };
 
@@ -74,16 +100,23 @@ function App() {
         <Personer data={state} dispatch={dispatch} />
       </div>
       <div className="flex-item">
-        <Biler dispatch={dispatch} numberOfCars={state.personerData.numberOfCars} />
+        <Biler
+          dispatch={dispatch}
+          numberOfCars={state.personerData.numberOfCars}
+        />
       </div>
       <div className="flex-item">
-        <Savings savings={state.personerData.income} />
+        <Savings
+          dispatch={dispatch}
+          savings={state.personerData.income}
+          showErrorTip={state.errorTips.savings}
+        />
       </div>
       <div className="flex-item">
         <Income downPayment={state.personerData.downPayment} />
       </div>
       <div className="flex-item">
-        <SubmitBtn />
+        <SubmitBtn isHidden={state.errorTips.savings || state.errorTips.downPayment} />
       </div>
     </div>
   );

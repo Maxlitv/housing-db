@@ -3,8 +3,12 @@ let store = {
     numberOfAdults: 0,
     numberOfCars: 0,
     numberOfAllPeople: 0,
-    income : 0,
+    income: 0,
     downPayment: 0,
+  },
+  errorTips: {
+    savings: false,
+    downPayment: false,
   },
   ageSpecs: {
     age0_2: "0-2 år",
