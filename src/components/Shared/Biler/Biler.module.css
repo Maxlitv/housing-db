@@ -33,11 +33,7 @@
   display: block;
   transition: all 0.2s;
   position: absolute;
-<<<<<<< HEAD
-  z-index: 5; 
-=======
   z-index: 5;
->>>>>>> 434df2a3b6069c936ce5bdbb57b61d58c7655750
 }
 .drop_open_hide {
   display: none;
