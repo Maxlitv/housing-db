@@ -3,15 +3,20 @@ import css from "./Savings.module.css";
 
 function Savings({ savings, dispatch, showErrorTip }) {
   const inputHandler = (e) => {
+<<<<<<< HEAD
     let input1 = Number(e.target.value);
     new Intl.NumberFormat().format(input1)
     if (input1 >= 100000000) {
+=======
+    let input = Number(e.target.value);
+    if (input >= 100000000) {
+>>>>>>> 434df2a3b6069c936ce5bdbb57b61d58c7655750
       dispatch({ type: "showErrorTip", marker: "savings" });
     } else {
       dispatch({ type: "hideErrorTip", marker: "savings" });
     }
 
-    dispatch({ type: "savings", payload: input1 });
+    dispatch({ type: "savings", payload: input });
   };
   return (
     <div className={css.container}>
