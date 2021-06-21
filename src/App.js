@@ -99,7 +99,7 @@ const reducer = (state, action) => {
       return {
         ...state,
         errorTips: {
-          ...state.errorTips.downPayment,
+          ...state.errorTips,
           [action.marker]: true,
         },
       };
@@ -107,7 +107,7 @@ const reducer = (state, action) => {
       return {
         ...state,
         errorTips: {
-          ...state.errorTips.downPayment,
+          ...state.errorTips,
           [action.marker]: false,
         },
       };

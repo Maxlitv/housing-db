@@ -23,7 +23,7 @@
   min-width: 144px;
   padding-left: 32px;
   padding-right: 32px;
-  margin-top: 50px;
+margin: 50px 25px 25px 25px;
 }
 .button:disabled {
   color: rgb(58, 67, 68);
@@ -38,4 +38,11 @@
 }
 .button:active {
   transform: translateY(4px);
+}
+@media screen and (max-width: 480px) {
+  .button{
+    display: flex;
+    align-items: center;
+    margin: 15px auto;
+  }
 }

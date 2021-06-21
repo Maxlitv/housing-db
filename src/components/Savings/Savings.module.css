@@ -51,3 +51,14 @@ input::-webkit-inner-spin-button {
   color: #ffffff;
   font-size: 13px;
 }
+@media screen and (max-width: 480px) {
+  .input_savings {
+    width: auto;
+  }
+  .error_msg{
+    width: auto;
+  }
+  .label {
+    margin-top: 0px;
+  }
+}

@@ -23,7 +23,7 @@
   background-color: white;
   margin: 0px 25px 25px 25px;
   position: absolute;
-  z-index: 5;
+  z-index: 6;
   transition: all 0.3s;
   display: block;
   transition: all 0.3s;
@@ -101,4 +101,14 @@
 }
 .arrow_up {
   transform: rotate(0deg);
+}
+@media screen and (max-width: 480px) {
+  .input_block{
+    width: auto;
+  }
+  .drop_open{
+    position: inherit;
+    width: auto;
+  }
+
 }

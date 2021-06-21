@@ -4,7 +4,7 @@ import css from "./Savings.module.css";
 function Savings({ savings, dispatch, showErrorTip }) {
   const inputHandler = (e) => {
     let input1 = Number(e.target.value);
-    console.log(typeof input1);
+    new Intl.NumberFormat().format(input1)
     if (input1 >= 100000000) {
       dispatch({ type: "showErrorTip", marker: "savings" });
     } else {

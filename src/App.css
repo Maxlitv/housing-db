@@ -3,8 +3,23 @@
   justify-content: center;
   flex-direction: row;
   background-color: #FFEEBA;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .flex-item{
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 480px) {
+  .App{
+    flex-direction: column;
+  }
+  .flex-item{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 736px) {
+  .App{
+    flex-direction: column;
+  }
 }
