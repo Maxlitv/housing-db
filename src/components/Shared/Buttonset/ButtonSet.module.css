@@ -27,7 +27,7 @@ padding-top: 20px;
 }
 .born_description {
   margin-top: -10px;
-  opacity: 50%;
+  color: gray;
 }
 .button_set {
   position: relative;
