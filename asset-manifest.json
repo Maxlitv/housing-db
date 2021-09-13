@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/housing-db/static/css/main.d0204c86.chunk.css",
+    "main.css": "/housing-db/static/css/main.ec101c8d.chunk.css",
     "main.js": "/housing-db/static/js/main.16fc3f0d.chunk.js",
     "main.js.map": "/housing-db/static/js/main.16fc3f0d.chunk.js.map",
     "runtime-main.js": "/housing-db/static/js/runtime-main.58a917d5.js",
@@ -10,7 +10,7 @@
     "static/js/3.a2232e14.chunk.js": "/housing-db/static/js/3.a2232e14.chunk.js",
     "static/js/3.a2232e14.chunk.js.map": "/housing-db/static/js/3.a2232e14.chunk.js.map",
     "index.html": "/housing-db/index.html",
-    "static/css/main.d0204c86.chunk.css.map": "/housing-db/static/css/main.d0204c86.chunk.css.map",
+    "static/css/main.ec101c8d.chunk.css.map": "/housing-db/static/css/main.ec101c8d.chunk.css.map",
     "static/js/2.3a190ec5.chunk.js.LICENSE.txt": "/housing-db/static/js/2.3a190ec5.chunk.js.LICENSE.txt",
     "static/media/arrow-down.62cd43fe.svg": "/housing-db/static/media/arrow-down.62cd43fe.svg",
     "static/media/logo.6ce24c58.svg": "/housing-db/static/media/logo.6ce24c58.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.58a917d5.js",
     "static/js/2.3a190ec5.chunk.js",
-    "static/css/main.d0204c86.chunk.css",
+    "static/css/main.ec101c8d.chunk.css",
     "static/js/main.16fc3f0d.chunk.js"
   ]
 }
