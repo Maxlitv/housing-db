@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/housing-db/static/css/main.e77cb1d2.chunk.css",
-    "main.js": "/housing-db/static/js/main.16fc3f0d.chunk.js",
-    "main.js.map": "/housing-db/static/js/main.16fc3f0d.chunk.js.map",
+    "main.js": "/housing-db/static/js/main.65618777.chunk.js",
+    "main.js.map": "/housing-db/static/js/main.65618777.chunk.js.map",
     "runtime-main.js": "/housing-db/static/js/runtime-main.58a917d5.js",
     "runtime-main.js.map": "/housing-db/static/js/runtime-main.58a917d5.js.map",
     "static/js/2.3a190ec5.chunk.js": "/housing-db/static/js/2.3a190ec5.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.58a917d5.js",
     "static/js/2.3a190ec5.chunk.js",
     "static/css/main.e77cb1d2.chunk.css",
-    "static/js/main.16fc3f0d.chunk.js"
+    "static/js/main.65618777.chunk.js"
   ]
 }
